@@ -4,4 +4,8 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-app.use(express.static(path.join(__dirname, '../client/index.html')));
+app.use(express.static(path.join(__dirname, '../client')));
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port: ${PORT}`);
+});
