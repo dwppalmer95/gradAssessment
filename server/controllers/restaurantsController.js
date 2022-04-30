@@ -12,7 +12,6 @@ restaurantController.getRestaurants = (req, res, next) => {
       };
       next(error);
     };
-
     console.log(`getRestaurants response: ${restaurants}`);
     res.locals.restaurants = restaurants;
     next();

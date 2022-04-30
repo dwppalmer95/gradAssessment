@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="stylesheets/styles.css">
   <meta charset="UTF-8">
   <title>BeenThere</title>
 </head>
 
-<script src="./main.js"></script>
+<script type="module" src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <body>
   <div class="restaurants"></div>
+  <br></br> 
+  <form class="newRestaurant">
+    <label for="name">Restaurant Name:</label>
+    <input type="text" id="name" class="nameInput">
+    <label for="neighborhood">Neighborhood:</label>
+    <input type="text" id="neighborhood" class="neighborhoodInput">
+    <button type="button" id="newRestaurantSubmit">Add Restaurant</button>
+  </form>
 </body>
 </html>
